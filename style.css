@@ -1,6 +1,6 @@
 html {
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory; /* Ativa a trava de rolagem no eixo vertical */
+  scroll-snap-type: y mandatory; 
 }
 
 .nivel-basico {
@@ -8,14 +8,13 @@ html {
   box-sizing: border-box;
   padding: 40px;
   
-  /* Flexbox - centraliuzar as colunas, algo assim */
   display: flex;
   flex-direction: column;
   justify-content: center; 
   align-items: center;     
   
   margin-bottom: 0; 
-scroll-snap-align: start; /* Garante que esta seção se encaixe no início da tela ao rolar */
+scroll-snap-align: start;
 
 }
 
