@@ -1,21 +1,14 @@
-html {
-  scroll-behavior: smooth;
-  scroll-snap-type: y mandatory; 
-}
+
 
 .nivel-basico {
   height: 100vh;
   box-sizing: border-box;
   padding: 40px;
-  
   display: flex;
   flex-direction: column;
-  justify-content: center; 
-  align-items: center;     
+  justify-content: center;
+  align-items: center;
   
-  margin-bottom: 0; 
-scroll-snap-align: start;
-
 }
 
 body {
@@ -52,18 +45,19 @@ body {
 /* ===================================================================
            NÍVEL INTERMEDIÁRIO (CORRIGIDA E CENTRALIZADA)
    =================================================================== */
+   
 .nivel-intermediario {
   height: 100vh;
+
   background: linear-gradient(135deg, #000111 0%, #000000 100%);
-  
-  /* Flexbox configurado em coluna para empilhar o Título e o Editor */
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 40px; /* Dá um espaço legal entre o título e o editor */
   overflow: hidden;
-  scroll-snap-align: start; /* Se você usou o efeito do bônus anterior */
+ 
 }
 
 /* Estilo do novo título (seguindo a identidade do seu título coral) */
@@ -298,6 +292,7 @@ body {
   50%, to { border-color: white }
 }
 
+
 /* =======================
    = NIVEL AVANÇADO =
    =======================
@@ -315,4 +310,31 @@ height: 100vh;
   align-items: center;     
   
   margin-bottom: 0; 
-scroll-snap-align: start;
+}
+
+/* ==================
+   EFEITO DE ENTRADA 
+   ================== */
+
+.voa-esquerda {
+  transform: translateX(-200px) rotate(-10deg);
+  opacity: 0;
+  transition: all 1s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.voa-direita {
+  transform: translateX(200px) rotate(10deg);
+  opacity: 0;
+  transition: all 1s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.voa-baixo {
+  transform: translateY(200px);
+  opacity: 0;
+  transition: all 1s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.mostrar-agora {
+  transform: translate(0, 0) rotate(0deg) !important;
+  opacity: 1 !important;
+}

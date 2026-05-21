@@ -35,7 +35,7 @@
         
         <div class="illustration-editor">
             
-            <div class="code code-html">
+            <div class="code code-html voa-esquerda">
                 <header>
                     <svg xmlns="http://www.w3.org/2000/svg" width="54" height="14" viewBox="0 0 54 14">
                         <circle cx="7" cy="7" r="7" fill="#FF5F56"/>
@@ -49,7 +49,7 @@
                 </div>
             </div>
 
-            <div class="code code-css">
+            <div class="code code-css voa-direita">
                 <header>
                     <svg xmlns="http://www.w3.org/2000/svg" width="54" height="14" viewBox="0 0 54 14">
                         <circle cx="7" cy="7" r="7" fill="#FF5F56"/>
@@ -70,7 +70,7 @@
                 </div>
             </div>
 
-            <div class="code code-js">
+            <div class="code code-js voa-baixo">
                 <header>
                     <svg xmlns="http://www.w3.org/2000/svg" width="54" height="14" viewBox="0 0 54 14">
                         <circle cx="7" cy="7" r="7" fill="#FF5F56"/>
@@ -94,7 +94,7 @@
     <section class="nivel-avancado">
 
         <h1 class="titulo-principal">Universo UI/UX - Nivel Avançado</h1>
-        
+
             <div class="container-cards">
                 <div class="card">
                     <h3>Design Responsivo</h3>
@@ -113,6 +113,21 @@
     
     
     </section>
+
+    <script>
+        const elementos = document.querySelectorAll('.voa-esquerda, .voa-direita, .voa-baixo');
+
+    
+        const observador = new IntersectionObserver((entradas) => {
+            entradas.forEach((entrada) => {
+                if (entrada.isIntersecting) {
+                    entrada.target.classList.add('mostrar-agora'); 
+                }
+            });
+        });
+
+        elementos.forEach((elemento) => observador.observe(elemento));
+    </script>
 
 </body>
 </html>
