@@ -1,0 +1,303 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif; 
+}
+
+
+.nivel-basico {
+  padding: 20px;
+  margin-bottom: 80px; 
+}
+
+.titulo-principal {
+  color: coral;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  margin-bottom: 30px;
+}
+
+.container-cards {
+  display: flex;
+  gap: 30px; 
+  flex-wrap: wrap; 
+}
+
+.card {
+  width: 300px;
+  height: 100px;
+  padding: 15px;
+  background-color: coral;
+  box-shadow: 10px 10px black;
+}
+
+
+.nivel-intermediario {
+  height: 95vh;
+  background: linear-gradient(135deg, #000111 0%, #000000 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.nivel-intermediario .illustration-editor {
+  margin-top: -2rem;
+  margin-right: -10rem;
+  display: grid;
+  grid-template-rows: 24px auto;
+  justify-items: center;
+  position: relative;
+}
+
+.nivel-intermediario .code {
+  position: absolute;
+  width: 290px;
+  height: 145px;
+  background: #1D1E22;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+  z-index: 5;
+}
+
+.nivel-intermediario .code header {
+  display: grid;
+  grid-template-columns: 36px auto 36px;
+  align-items: center;
+}
+
+.nivel-intermediario .code header svg {
+  margin: 10px;
+}
+
+.nivel-intermediario .code header h1 {
+  font-family: Lato, sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+  letter-spacing: 1.57px;
+  color: #C5C8D4;
+  margin: 0;
+}
+
+.nivel-intermediario .code-html {
+  left: -100px;
+  top: 40px;
+}
+
+.nivel-intermediario .code-css {
+  left: -25px;
+  top: 200px;
+}
+
+.nivel-intermediario .code-js {
+  left: -175px;
+  top: 360px;
+}
+
+.nivel-intermediario .code-content {
+  margin: 0 10px 10px;
+  color: white;
+}
+
+
+.nivel-intermediario .code-content .c-r { color: #A88038 }
+.nivel-intermediario .code-content .c-o { color: #DE7300 }
+.nivel-intermediario .code-content .c-y { color: #E1CA72 }
+.nivel-intermediario .code-content .c-g { color: #74B087 }
+.nivel-intermediario .code-content .c-p { color: #9F8198 }
+.nivel-intermediario .code-content .c-b { color: #7A99AD }
+.nivel-intermediario .code-content .c-c { color: #666666 }
+
+
+.nivel-intermediario .code-css .code-content code .line-1,
+.nivel-intermediario .code-css .code-content code .line-2,
+.nivel-intermediario .code-css .code-content code .line-3,
+.nivel-intermediario .code-css .code-content code .line-4,
+.nivel-intermediario .code-css .code-content code .line-5 {
+  width: 0%;
+  margin: 0;
+  border-right: .15em solid transparent;
+  overflow: hidden;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.nivel-intermediario .code-css .code-content code .line-1 {
+  animation: typing-1 1s 0s steps(10, end) forwards, cursor 1s linear 0s 3;
+}
+.nivel-intermediario .code-css .code-content code .line-2 {
+  margin-left: 2rem;
+  animation: typing-2 3s 3s steps(30, end) forwards, cursor 1s linear 3s 3;
+}
+.nivel-intermediario .code-css .code-content code .line-3 {
+  margin-left: 4rem;
+  animation: typing-3 1s 6s steps(10, end) forwards, cursor 1s linear 6s 3;
+}
+.nivel-intermediario .code-css .code-content code .line-4 {
+  margin-left: 4rem;
+  animation: typing-4 1s 9s steps(10, end) forwards, cursor 1s linear 9s 3;
+}
+.nivel-intermediario .code-css .code-content code .line-5 {
+  margin-left: 4rem;
+  border-color: transparent;
+  animation: typing-5 3s 12s steps(30, end) forwards, cursor-persist 1s linear 12s infinite;
+}
+
+.nivel-intermediario .editor-block {
+  position: relative;
+  display: block;
+  width: 500px;
+  height: 421px;
+  background: linear-gradient(109.61deg, #4C4F5A 4.26%, #202125 84.84%);
+  border-radius: 10px;
+}
+
+@keyframes typing-1 { from { width: 0 } to { width: 60px } }
+@keyframes typing-2 { from { width: 0 } to { width: 220px } }
+@keyframes typing-3 { from { width: 0 } to { width: 70px } }
+@keyframes typing-4 { from { width: 0 } to { width: 75px } }
+@keyframes typing-5 { from { width: 0 } to { width: 141px } }
+
+@keyframes cursor {
+  from, to, 20%, 80% { border-color: transparent }
+  25%, 75% { border-color: white }
+}
+
+@keyframes cursor-persist {
+  from, 45% { border-color: transparent }
+  50%, to { border-color: white }
+}
+
+.nivel-intermediario {
+  height: 95vh; /* vh = viewport height (altura da tela) */
+  background: linear-gradient(135deg, #000111 0%, #000000 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.nivel-intermediario .illustration-editor {
+  margin-top: -2rem;
+  margin-right: -10rem;
+  display: grid;
+  grid-template-rows: 24px auto;
+  justify-items: center;
+  position: relative;
+}
+
+.nivel-intermediario .code {
+  position: absolute;
+  width: 290px;
+  height: 145px;
+  background: #1D1E22;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+  z-index: 5;
+}
+
+.nivel-intermediario .code header {
+  display: grid;
+  grid-template-columns: 36px auto 36px;
+  align-items: center;
+}
+
+.nivel-intermediario .code header svg {
+  margin: 10px;
+}
+
+.nivel-intermediario .code header h1 {
+  font-family: Lato, sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+  letter-spacing: 1.57px;
+  color: #C5C8D4;
+  margin: 0;
+}
+
+.nivel-intermediario .code-html {
+  left: -100px;
+  top: 40px;
+}
+
+.nivel-intermediario .code-css {
+  left: -25px;
+  top: 200px;
+}
+
+.nivel-intermediario .code-js {
+  left: -175px;
+  top: 360px;
+}
+
+.nivel-intermediario .code-content {
+  margin: 0 10px 10px;
+  color: white;
+}
+
+
+.nivel-intermediario .code-content .c-r { color: #A88038 }
+.nivel-intermediario .code-content .c-o { color: #DE7300 }
+.nivel-intermediario .code-content .c-y { color: #E1CA72 }
+.nivel-intermediario .code-content .c-g { color: #74B087 }
+.nivel-intermediario .code-content .c-p { color: #9F8198 }
+.nivel-intermediario .code-content .c-b { color: #7A99AD }
+.nivel-intermediario .code-content .c-c { color: #666666 }
+
+.nivel-intermediario .code-css .code-content code .line-1,
+.nivel-intermediario .code-css .code-content code .line-2,
+.nivel-intermediario .code-css .code-content code .line-3,
+.nivel-intermediario .code-css .code-content code .line-4,
+.nivel-intermediario .code-css .code-content code .line-5 {
+  width: 0%;
+  margin: 0;
+  border-right: .15em solid transparent;
+  overflow: hidden;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.nivel-intermediario .code-css .code-content code .line-1 {
+  animation: typing-1 1s 0s steps(10, end) forwards, cursor 1s linear 0s 3;
+}
+.nivel-intermediario .code-css .code-content code .line-2 {
+  margin-left: 2rem;
+  animation: typing-2 3s 3s steps(30, end) forwards, cursor 1s linear 3s 3;
+}
+.nivel-intermediario .code-css .code-content code .line-3 {
+  margin-left: 4rem;
+  animation: typing-3 1s 6s steps(10, end) forwards, cursor 1s linear 6s 3;
+}
+.nivel-intermediario .code-css .code-content code .line-4 {
+  margin-left: 4rem;
+  animation: typing-4 1s 9s steps(10, end) forwards, cursor 1s linear 9s 3;
+}
+.nivel-intermediario .code-css .code-content code .line-5 {
+  margin-left: 4rem;
+  border-color: transparent;
+  animation: typing-5 3s 12s steps(30, end) forwards, cursor-persist 1s linear 12s infinite;
+}
+
+.nivel-intermediario .editor-block {
+  position: relative;
+  display: block;
+  width: 500px;
+  height: 421px;
+  background: linear-gradient(109.61deg, #4C4F5A 4.26%, #202125 84.84%);
+  border-radius: 10px;
+}
+
+@keyframes typing-1 { from { width: 0 } to { width: 60px } }
+@keyframes typing-2 { from { width: 0 } to { width: 220px } }
+@keyframes typing-3 { from { width: 0 } to { width: 70px } }
+@keyframes typing-4 { from { width: 0 } to { width: 75px } }
+@keyframes typing-5 { from { width: 0 } to { width: 141px } }
+
+@keyframes cursor {
+  from, to, 20%, 80% { border-color: transparent }
+  25%, 75% { border-color: white }
+}
+
+@keyframes cursor-persist {
+  from, 45% { border-color: transparent }
+  50%, to { border-color: white }
+}
