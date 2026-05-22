@@ -42,9 +42,9 @@ body {
   box-shadow: 10px 10px black;
 }
 
-/* ===================================================================
-           NÍVEL INTERMEDIÁRIO (CORRIGIDA E CENTRALIZADA)
-   =================================================================== */
+/* =============================
+        NÍVEL INTERMEDIÁRIO
+   =============================*/
    
 .nivel-intermediario {
   height: 100vh;
@@ -55,12 +55,11 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 40px; /* Dá um espaço legal entre o título e o editor */
+  gap: 40px; 
   overflow: hidden;
  
 }
 
-/* Estilo do novo título (seguindo a identidade do seu título coral) */
 .titulo-intermediario {
   color: coral;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -68,16 +67,16 @@ body {
   margin: 0;
 }
 
-/* Resetando as margens loucas que jogavam o elemento para fora da tela */
+
 .nivel-intermediario .illustration-editor {
-  margin: 0; /* 👈 Removeu o -2rem e -10rem que cortavam o layout */
+  margin: 0; 
   display: grid;
   grid-template-rows: auto;
   justify-items: center;
   position: relative;
 }
 
-/* As janelinhas internas continuam com a posição absoluta controlada */
+
 .nivel-intermediario .code {
   position: absolute;
   width: 290px;
@@ -91,28 +90,28 @@ body {
 .nivel-intermediario .code header {
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* Alinha tudo à esquerda de forma limpa */
-  padding: 0 15px; /* Adiciona um espaço lateral interno de 15px */
-  height: 24px; /* Mantém a altura original do cabeçalho */
+  justify-content: flex-start; 
+  padding: 0 15px; 
+  height: 24px; 
 }
 
-/* Ajuste o tamanho e a margem do SVG das bolinhas macOS */
+
 .nivel-intermediario .code header svg {
-  margin: 0; /* Remove a margem original de 10px */
-  margin-right: 15px; /* Cria um espaço de 15px antes do texto "HTML" ou "CSS" */
-  width: 50px; /* Define um tamanho adequado para o SVG das bolinhas macOS */
+  margin: 0; 
+  margin-right: 15px; 
+  width: 50px; 
   height: 14px;
 }
 
-/* Certifique-se de que o texto H1 não tenha margens ou quebras de linha estranhas */
+
 .nivel-intermediario .code header h1 {
   font-family: Lato, sans-serif;
   font-weight: 900;
   font-size: 14px;
   letter-spacing: 1.57px;
   color: #C5C8D4;
-  margin: 0; /* Garante que não haja margem externa */
-  white-space: nowrap; /* Impede que o texto quebre ou seja cortado de forma estranha */
+  margin: 0; 
+  white-space: nowrap; 
 }
 
 .nivel-intermediario .code-html {
@@ -303,7 +302,6 @@ height: 100vh;
   box-sizing: border-box;
   padding: 40px;
   
-  /* Flexbox - centraliuzar as colunas, algo assim */
   display: flex;
   flex-direction: column;
   justify-content: center; 
