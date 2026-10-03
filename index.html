@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=e9f103b">
     <title>Universo UI/UX — do básico ao avançado</title>
 </head>
 <body>
@@ -139,20 +139,7 @@ grid-template-columns:
         <a class="avancado-voltar" href="#inicio">Voltar ao início ↑</a>
     </section>
 
-    <script>
-        const elementos = document.querySelectorAll('.voa-esquerda, .voa-direita, .voa-baixo');
-
-    
-        const observador = new IntersectionObserver((entradas) => {
-            entradas.forEach((entrada) => {
-                if (entrada.isIntersecting) {
-                    entrada.target.classList.add('mostrar-agora'); 
-                }
-            });
-        });
-
-        elementos.forEach((elemento) => observador.observe(elemento));
-    </script>
+    <script src="script.js?v=947c454" defer></script>
 
 </body>
 </html>
