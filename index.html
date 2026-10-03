@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Universo UI/UX — do básico ao avançado</title>
 </head>
 <body>
    
-    <section class="nivel-basico">
-        <h1 class="titulo-principal">Universo UI/UX - Nivel Basico</h1>
+    <section class="nivel-basico" id="inicio">
+        <h1 class="titulo-principal">Universo UI/UX - Nível Básico</h1>
         
         <div class="container-cards">
             <div class="card">
@@ -31,7 +31,7 @@
    
     <section class="nivel-intermediario">
         
-        <h2 class="titulo-intermediario">Universo UI/UX - Nivel Intermediario</h2>
+        <h2 class="titulo-intermediario">Universo UI/UX - Nível Intermediário</h2>
         
         <div class="illustration-editor">
             
@@ -92,27 +92,51 @@
         
     </section>
 
-    <section class="nivel-avancado">
-
-        <h1 class="titulo-principal">Universo UI/UX - Nivel Avançado</h1>
-
-            <div class="container-cards">
-                <div class="card">
-                    <h3>Design Responsivo</h3>
-                    <p>Adaptação perfeita para qualquer tela.</p>
-                </div>
-    
-                <div class="card">
-                    <h3>Interatividade Avançada</h3>
-                    <p>Experiências dinâmicas e envolventes.</p>
-                </div>
-    
-                <div class="card">
-                    <h3>Performance Otimizada</h3>
-                    <p>Sites rápidos e eficientes para todos os usuários.</p>
-                </div>
-    
-    
+    <section class="nivel-avancado" id="avancado" aria-labelledby="titulo-avancado">
+        <p class="avancado-etiqueta">03 / O próximo passo</p>
+        <h2 class="titulo-principal" id="titulo-avancado">Universo UI/UX - Nível Avançado</h2>
+        <p class="avancado-intro">Do visual à experiência: interfaces que se adaptam, respondem e carregam com eficiência.</p>
+        <div class="container-cards">
+            <article class="card">
+                <span class="avancado-numero" aria-hidden="true">01</span>
+                <h3>Design Responsivo</h3>
+                <p>Um bom layout acompanha a tela, do celular ao desktop.</p>
+                <details>
+                    <summary>Explorar exemplo</summary>
+                    <p>Com Grid e media queries, os cards se reorganizam sem cortar o conteúdo.</p>
+                    <pre><code>display: grid;
+grid-template-columns:
+  repeat(auto-fit, minmax(240px, 1fr));</code></pre>
+                </details>
+            </article>
+            <article class="card">
+                <span class="avancado-numero" aria-hidden="true">02</span>
+                <h3>Interatividade Avançada</h3>
+                <p>Feedback claro para cada ação, com atenção à acessibilidade.</p>
+                <details>
+                    <summary>Explorar exemplo</summary>
+                    <p>Este painel usa HTML nativo: abra e feche com um clique ou com Enter quando o título estiver em foco.</p>
+                    <pre><code>&lt;details&gt;
+  &lt;summary&gt;Explorar&lt;/summary&gt;
+  Conteúdo do painel
+&lt;/details&gt;</code></pre>
+                </details>
+            </article>
+            <article class="card">
+                <span class="avancado-numero" aria-hidden="true">03</span>
+                <h3>Performance Otimizada</h3>
+                <p>Menos peso e mais fluidez em cada visita.</p>
+                <details>
+                    <summary>Explorar exemplo</summary>
+                    <p>Imagens fora da primeira tela podem carregar sob demanda. Informe suas dimensões para evitar saltos no layout.</p>
+                    <pre><code>&lt;img src="imagem.webp"
+  alt="Descrição da imagem"
+  width="640" height="360"
+  loading="lazy"&gt;</code></pre>
+                </details>
+            </article>
+        </div>
+        <a class="avancado-voltar" href="#inicio">Voltar ao início ↑</a>
     </section>
 
     <script>
