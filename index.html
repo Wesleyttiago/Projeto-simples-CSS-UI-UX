@@ -3,93 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css?v=e9f103b">
+    <link rel="stylesheet" href="style.css?v=mobile-20261004">
     <title>Universo UI/UX — do básico ao avançado</title>
 </head>
 <body>
-   
-    <section class="nivel-basico" id="inicio">
-        <h1 class="titulo-principal">Universo UI/UX - Nível Básico</h1>
+    <main>
+    <section class="nivel-basico" id="inicio" aria-labelledby="titulo-basico">
+        <p class="nivel-etiqueta">01 / Os primeiros passos</p>
+        <h1 class="titulo-principal" id="titulo-basico">Universo UI/UX - Nível Básico</h1>
+        <p class="nivel-intro">Três fundamentos para começar a construir na web.</p>
         
         <div class="container-cards">
-            <div class="card">
-                <h3>HTML5</h3>
+            <article class="card">
+                <h2>HTML5</h2>
                 <p>A estrutura básica de tudo.</p>
-            </div>
+            </article>
 
-            <div class="card">
-                <h3>CSS3</h3>
+            <article class="card">
+                <h2>CSS3</h2>
                 <p>Onde a mágica visual acontece.</p>
-            </div>
+            </article>
 
-            <div class="card">
-                <h3>JavaScript</h3>
+            <article class="card">
+                <h2>JavaScript</h2>
                 <p>O cérebro e o dinamismo da página.</p>
-            </div>
+            </article>
         </div>
     </section>
    
-    <section class="nivel-intermediario">
-        
-        <h2 class="titulo-intermediario">Universo UI/UX - Nível Intermediário</h2>
-        
+    <section class="nivel-intermediario" id="intermediario" aria-labelledby="titulo-intermediario">
+        <p class="nivel-etiqueta">02 / Forma e movimento</p>
+        <h2 class="titulo-intermediario" id="titulo-intermediario">Universo UI/UX - Nível Intermediário</h2>
+        <p class="nivel-intro">Estrutura, estilo e lógica trabalhando juntos para dar vida à interface.</p>
         <div class="illustration-editor">
-            
-            <div class="code code-html voa-esquerda">
+            <article class="code code-html voa-esquerda" aria-labelledby="painel-html">
                 <header>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="54" height="14" viewBox="0 0 54 14">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="54" height="14" viewBox="0 0 54 14" aria-hidden="true" focusable="false">
                         <circle cx="7" cy="7" r="7" fill="#FF5F56"/>
                         <circle cx="27" cy="7" r="7" fill="#FFBD2E"/>
                         <circle cx="47" cy="7" r="7" fill="#27C93F"/>
                     </svg>
-                    <h1>HTML</h1>
-
+                    <h3 id="painel-html">HTML</h3>
                 </header>
-                <div class="code-content">
-                    <span class="c-b">&lt;div </span><span class="c-g">class=</span><span class="c-y">"rect"</span><span class="c-b">&gt;&lt;/div&gt;</span>
-                </div>
-            </div>
-
-            <div class="code code-css voa-direita">
+                <pre class="code-content" tabindex="0" aria-label="Exemplo de código HTML"><code><span class="c-b">&lt;div</span> <span class="c-g">class=</span><span class="c-y">"rect"</span><span class="c-b">&gt;</span>
+<span class="c-b">&lt;/div&gt;</span></code></pre>
+            </article>
+            <article class="code code-css voa-direita" aria-labelledby="painel-css">
                 <header>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="54" height="14" viewBox="0 0 54 14">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="54" height="14" viewBox="0 0 54 14" aria-hidden="true" focusable="false">
                         <circle cx="7" cy="7" r="7" fill="#FF5F56"/>
                         <circle cx="27" cy="7" r="7" fill="#FFBD2E"/>
                         <circle cx="47" cy="7" r="7" fill="#27C93F"/>
                     </svg>
-                    <h1>CSS</h1>
-                    <div></div>
+                    <h3 id="painel-css">CSS</h3>
                 </header>
-                <div class="code-content">
-                    <code>
-                        <div class="line-1"><span class="c-y">.rect</span> <span class="c-b">{</span></div>
-                        <div class="line-2"><span class="c-c">background:</span> <span class="c-o">linear-gradient</span><span class="c-b">(</span></div>
-                        <div class="line-3"><span class="c-r">-119deg</span><span class="c-b">,</span></div>
-                        <div class="line-4"><span class="c-p">$gray</span> <span class="c-r">0%</span><span class="c-b">,</span></div>
-                        <div class="line-5"><span class="c-p">$dark-gray</span> <span class="c-r">100%</span><span class="c-b">);}</span></div>
-                    </code>
-                </div>
-            </div>
-
-            <div class="code code-js voa-baixo">
+                <pre class="code-content" tabindex="0" aria-label="Exemplo de código CSS"><code><span class="c-y">.rect</span> <span class="c-b">{</span>
+  <span class="c-c">background:</span> <span class="c-o">linear-gradient</span><span class="c-b">(</span>
+    <span class="c-r">110deg</span><span class="c-b">,</span>
+    <span class="c-p">#4c4f5a</span><span class="c-b">,</span>
+    <span class="c-p">#202125</span>
+  <span class="c-b">);</span>
+<span class="c-b">}</span></code></pre>
+            </article>
+            <article class="code code-js voa-baixo" aria-labelledby="painel-js">
                 <header>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="54" height="14" viewBox="0 0 54 14">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="54" height="14" viewBox="0 0 54 14" aria-hidden="true" focusable="false">
                         <circle cx="7" cy="7" r="7" fill="#FF5F56"/>
                         <circle cx="27" cy="7" r="7" fill="#FFBD2E"/>
                         <circle cx="47" cy="7" r="7" fill="#27C93F"/>
                     </svg>
-                    <h1>JS</h1>
-                    <div></div>
+                    <h3 id="painel-js">JS</h3>
                 </header>
-                <div class="code-content">
-                    <span class="c-p">var</span> <span class="c-b">colors</span> <span class="c-y">=</span> <span class="c-b">[</span><span class="c-g">"#74B087"</span><span class="c-b">, </span><span class="c-g">"#DE7300"</span><span class="c-b">];</span>
-                </div>
-            </div>
-
-            <div class="editor-block"></div>
-            
+                <pre class="code-content" tabindex="0" aria-label="Exemplo de código JS"><code><span class="c-p">const</span> <span class="c-b">colors</span> <span class="c-y">=</span> <span class="c-b">[</span>
+  <span class="c-g">"#74B087"</span><span class="c-b">,</span>
+  <span class="c-g">"#DE7300"</span>
+<span class="c-b">];</span></code></pre>
+            </article>
+            <div class="editor-block" aria-hidden="true"></div>
         </div>
-        
     </section>
 
     <section class="nivel-avancado" id="avancado" aria-labelledby="titulo-avancado">
@@ -138,6 +129,8 @@ grid-template-columns:
         </div>
         <a class="avancado-voltar" href="#inicio">Voltar ao início ↑</a>
     </section>
+
+    </main>
 
     <script src="script.js?v=947c454" defer></script>
 
